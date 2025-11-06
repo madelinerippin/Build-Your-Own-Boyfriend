@@ -6,4 +6,4 @@
 3. python ao3_get_fanfics.py 71695961 --header "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AO3Scraper/1.0 (Contact: your_email@example.com)" (if you just wanted 1 fanfic)
 
 Running the 2nd and 3rd command will save the fanfics into a csv called fanfics.csv
-It seems like for now even if the fanfiction has multiple chapters, only the first one will be saved which is probably fine because of length anyway
+It seems finicky with the ability to save from multiple chapters from a fanfiction, but might just want to keep it to the first one anyway
