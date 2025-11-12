@@ -1,0 +1,8 @@
+{
+    "branching_event_number": "2",
+    "original_decision": "Belly decides to embrace her friendship with Conrad, spending the summer together.",
+    "alternate_decision": "Belly could have kept her distance from Conrad, focusing instead on other friendships to avoid complicating her feelings.",
+    "events_to_generate": "15 events",
+    "major_plot_points": "Belly decides to embrace her friendship with Conrad, spending the summer together.",
+    "prompt": "1. Ask to use the original storyline as a reference to write an alternate storyline that branches out at event 2 if Belly could have kept her distance from Conrad, focusing instead on other friendships to avoid complicating her feelings. instead of Belly decides to embrace her friendship with Conrad, spending the summer together.\n2. Provide 5 thought-provoking, concrete guiding questions as potential directions to explore that expand the following:\n   a. How would the alternate decision change or replace Belly decides to embrace her friendship with Conrad, spending the summer together.?\n   b. How would Belly make key decisions that overcome new challenges and propel the story forward?\n3. Describe what an ideal alternate storyline should look like.\n4. Ask to output the alternate storyline as a list of 15 events that has Belly could have kept her distance from Conrad, focusing instead on other friendships to avoid complicating her feelings. as the first event.>"
+}

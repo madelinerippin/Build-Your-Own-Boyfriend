@@ -1,0 +1,8 @@
+{
+    "branching_event_number": "5",
+    "original_decision": "Belly decides to express her feelings subtly, hoping Conrad feels the same way.",
+    "alternate_decision": "Belly could have chosen to suppress her romantic feelings entirely to preserve the status quo of their friendship.",
+    "events_to_generate": "12",
+    "major_plot_points": "Turbulent confrontations force Belly to face the potential heartbreak tied to her relationship with Conrad.",
+    "prompt": "1. Ask to use the original storyline as a reference to write an alternate storyline that branches out at event 5 if Isabel Conklin Belly could have chosen to suppress her romantic feelings entirely to preserve the status quo of their friendship. instead of Belly decides to express her feelings subtly, hoping Conrad feels the same way..\n2. Provide 5 thought-provoking, concrete guiding questions as potential directions to explore that expand the following:\n   a. How would the alternate decision change or replace Turbulent confrontations force Belly to face the potential heartbreak tied to her relationship with Conrad.?\n   b. How would Isabel Conklin make key decisions that overcome new challenges and propel the story forward?\n3. Describe what an ideal alternate storyline should look like.\n4. Ask to output the alternate storyline as a list of 12 events that has Belly could have chosen to suppress her romantic feelings entirely to preserve the status quo of their friendship. as the first event.>"
+}

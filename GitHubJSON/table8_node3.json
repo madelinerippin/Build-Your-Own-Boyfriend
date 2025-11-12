@@ -1,0 +1,8 @@
+{
+    "branching_event_number": "11",
+    "original_decision": "Belly decides to assert herself, leading to confrontations with her mother and addressing her feelings for Conrad.",
+    "alternate_decision": "Belly could have delayed addressing these issues, continuing with the status quo to avoid immediate conflict.",
+    "events_to_generate": "6",
+    "major_plot_points": "Turbulent confrontations force Belly to face the potential heartbreak tied to her relationship with Conrad.",
+    "prompt": "1. Ask to use the original storyline as a reference to write an alternate storyline that branches out at event 11 if Isabel Conklin could have delayed addressing these issues, continuing with the status quo to avoid immediate conflict instead of Belly decides to assert herself, leading to confrontations with her mother and addressing her feelings for Conrad.\n2. Provide 5 thought-provoking, concrete guiding questions as potential directions to explore that expand the following:\n   a. How would the alternate decision change or replace Turbulent confrontations force Belly to face the potential heartbreak tied to her relationship with Conrad?\n   b. How would Isabel Conklin make key decisions that overcome new challenges and propel the story forward?\n3. Describe what an ideal alternate storyline should look like.\n4. Ask to output the alternate storyline as a list of 6 events that has Belly could have delayed addressing these issues, continuing with the status quo to avoid immediate conflict. as the first event.>"
+}
