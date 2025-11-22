@@ -1,0 +1,97 @@
+.center_stuff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 64px;
+    color: pink;
+    font-weight: bold;
+}
+
+.pink_box {
+    width: 70vw;
+    height: 20vh;
+    background-color: rgb(255, 226, 231);
+    border: 1px solid rgb(255, 67, 123);
+}
+
+.trope_box_title {
+    font-size: 32px;
+    color: rgb(131, 50, 63);
+    font-weight: bold;
+}
+
+.drop_down_style {
+    background-color: rgb(255, 226, 231);
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(255, 67, 123);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.summary_box{
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(255, 226, 231);
+    border: 1px solid rgb(255, 67, 123);
+}
+
+.pink_button {
+    background-color: pink;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    font-size: 24px;
+}
+
+.trope_item {
+    font-size: 52px;
+    color: rgb(255, 108, 132);
+    font-weight: bold;
+    width: 300px;
+    background-color: rgba(255, 36, 36, 0.1);
+    border: 3px solid rgb(255, 191, 131);
+}
+
+.trope_item:hover {
+    cursor: pointer;
+    border: 5px dashed rgb(255, 191, 131);
+    background-color: rgba(97, 97, 97, 0.0);
+}
+
+.selected_item {
+    font-size: 52px;
+    color: rgb(255, 108, 132);
+    font-weight: bold;
+    width: 300px;
+    border: 8px ridge rgb(255, 191, 131);
+    background-color: rgba(97, 97, 97, 0.0);
+}
+
+.gamja-flower-regular {
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.summary_text {
+    width: 95%;
+    height: 95%;
+}

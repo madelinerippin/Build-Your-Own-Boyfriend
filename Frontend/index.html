@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Gamja+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <br>
+        <div class="center_stuff">
+            <img src="https://em-content.zobj.net/source/apple/325/face-with-hand-over-mouth_1f92d.png" width="70" height="70">
+            <div class="title comic-relief-bold" style="margin-left: 10; margin-right: 10;">Boyfriend Builder</div>
+            <img src="https://em-content.zobj.net/source/apple/325/face-with-hand-over-mouth_1f92d.png" width="70" height="70">
+        </div>
+        <br><br>
+        <div id="trope_container" class="center_stuff">
+            <div id="trope_box" class="center_stuff pink_box" style="flex-direction: column; overflow: hidden;">
+                <div style="margin-bottom: 30px;" class="trope_box_title comic-relief-bold">Choose your Character Trope 😳🩷💜</div>
+                <div id="select_trope_box" class="center_stuff" style="flex-direction: row; gap: 1vw;">
+                    <div id="trope_1" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_1')">
+                        <div>👨‍💼</div>
+                        <div>CEO</div>
+                    </div>
+                    <div id="trope_2" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_2')">
+                        <div>🔫</div>
+                        <div>Mafia</div>
+                    </div>
+                    <div id="trope_3" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_3')">
+                        <div>🏈</div>
+                        <div>Jock</div>
+                    </div>
+                    <div id="trope_4" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_4')">
+                        <div>🤴</div>
+                        <div>Prince</div>
+                    </div>
+                    <div id="trope_5" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_5')">
+                        <div>😶‍🌫️</div>
+                        <div>Mysterious</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="center_stuff title comic-relief-bold" style="font-size: 42px;">
+            <div>Choose your Date Setting:</div>
+        </div>
+        <br>
+        <div id="drop_down_container" class="center_stuff">
+            <select class="drop_down_style comic-relief-bold">
+                <option value="volvo">Restaurant Date 🍝🐟</option>
+                <option value="saab">Movie Date 🍿</option>
+                <option value="mercedes">Amusement Park Date 🎢😱</option>
+            </select>
+        </div>
+        <br><br><br><br><br>
+        <div id="summary_title_container" class="center_stuff title comic-relief-bold" style="font-size: 42px;">
+            <div id="summary_container">
+                🤓 Summary: 📖
+            </div>
+        </div>
+        <br>
+        <div id="summary_container" class="center_stuff comic-relief-bold">
+            <div id="summary_box" class=" center_stuff summary_box">
+                <div class="summary_text">
+                    Summary content
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="center_stuff">
+            <button class="pink_button">Generate</button>
+        </div>
+        <script src="trope_methods.js"></script>
+    </body>
+</html>
