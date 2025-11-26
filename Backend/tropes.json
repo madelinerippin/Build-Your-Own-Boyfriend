@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Enemies to Lovers",
+    "beats": [
+      "Hostile or snarky first encounter",
+      "Petty rivalry or sabotage",
+      "Forced proximity or joint task",
+      "Moment of unexpected vulnerability",
+      "Shift to jealousy or awareness",
+      "Breaking point confession or kiss"
+    ],
+    "lexical_markers": [
+      "You drive me insane.",
+      "Stop looking at me like that.",
+      "I can't stand you...but I can't stop thinking about you.",
+      "Why are you suddenly being nice to me?",
+      "This doesn't mean I like you.",
+      "You're impossible...and it's annoying how much I notice you."
+    ]
+  },
+  {
+    "name": "Friends to Lovers",
+    "beats": [
+      "Comfortable friendship dynamic",
+      "New awareness of attraction",
+      "Jealousy or shift in boundaries",
+      "Accidental intimacy",
+      "Confession or emotional risk",
+      "Realizing the relationship can evolve"
+    ],
+    "lexical_markers": [
+      "When did you start looking at me like that?",
+      "We've always been close...but this feels different.",
+      "You're the one person I can't lose.",
+      "Why does it feel weird seeing you with someone else?",
+      "Don't make me fall for you. Not like this."
+    ]
+  },
+  {
+    "name": "Forbidden Love",
+    "beats": [
+      "Recognition of the boundary",
+      "Unwanted attraction",
+      "Secret meetings or stolen moments",
+      "Risk of exposure",
+      "Conflict between desire and consequences",
+      "Courage or sacrifice"
+    ],
+    "lexical_markers": [
+      "We can't do this...but I want to.",
+      "If someone sees us—",
+      "I shouldn't touch you. I know that.",
+      "You make me forget every rule I'm supposed to follow.",
+      "Say the word and I'll walk away. Just say it.",
+      "You're worth the risk."
+    ]
+  },
+  {
+    "name": "Fake Relationship",
+    "beats": [
+      "Agreement to pretend",
+      "Public displays of affection",
+      "Blurry boundaries",
+      "Jealousy or protectiveness",
+      "Accidental intimacy",
+      "Confession or realization"
+    ],
+    "lexical_markers": [
+      "We should practice… to make it convincing.",
+      "That didn't feel fake.",
+      "You're enjoying this way too much.",
+      "If we're pretending, why does my heart feel like this?",
+      "One more kiss. For the plan. Right?"
+    ]
+  },
+  {
+    "name": "Grumpy and Sunshine",
+    "beats": [
+      "Clashing personalities",
+      "Sunshine softens grumpy",
+      "Grumpy protects sunshine",
+      "Private emotional opening",
+      "Growing interdependence",
+      "Mutual realization"
+    ],
+    "lexical_markers": [
+      "Why are you always smiling at me?",
+      "Stop trying to make me laugh—it's working.",
+      "You look at me like I'm worth something.",
+      "I don't know how to be gentle...but I want to try for you."
+    ]
+  },
+  {
+    "name": "Love Triangle",
+    "beats": [
+      "Establishing both connections",
+      "Conflicted attraction",
+      "Jealousy from both sides",
+      "Moments of clarity with each",
+      "Emotional breaking point",
+      "Final decision"
+    ],
+    "lexical_markers": [
+      "I can't choose. Not yet.",
+      "You make me feel safe… but he makes my heart race.",
+      "This isn't fair to any of us.",
+      "Why does it hurt seeing you with them?",
+      "I have to follow my heart, even if it breaks yours."
+    ]
+  },
+  {
+    "name": "Best Friend's Brother",
+    "beats": [
+      "Long-standing familiarity",
+      "New physical or emotional awareness",
+      "Secret flirtation",
+      "Caught or nearly caught",
+      "Conversation about loyalty",
+      "Acceptance or confrontation"
+    ],
+    "lexical_markers": [
+      "If your brother finds out—",
+      "This is a bad idea. A really hot, really bad idea.",
+      "We can't let them see us together.",
+      "You're off-limits...but that never stopped me.",
+      "I've wanted you longer than you think."
+    ]
+  },
+  {
+    "name": "Second Chance Romance",
+    "beats": [
+      "Unexpected reunion",
+      "Old wounds resurfacing",
+      "Lingering chemistry",
+      "Rehashing the past",
+      "Moment of clarity or apology",
+      "Recommitment"
+    ],
+    "lexical_markers": [
+      "I didn't think I'd see you again.",
+      "You still know exactly how to get to me.",
+      "I never stopped wanting you.",
+      "I'm scared you'll break my heart again.",
+      "Maybe this time we can get it right."
+    ]
+  },
+  {
+    "name": "Age Gap",
+    "beats": [
+      "Recognition of age difference",
+      "Reluctance or denial",
+      "Growing chemistry",
+      "Power dynamic discussion",
+      "External judgment or conflict",
+      "Commitment despite disparity"
+    ],
+    "lexical_markers": [
+      "You're too young for me… or at least you should be.",
+      "I shouldn't want someone your age.",
+      "You make me forget how old I am.",
+      "This feels wrong, but it also feels right.",
+      "Age doesn't scare me. Losing you does."
+    ]
+  },
+  {
+    "name": "Secret Billionaire",
+    "beats": [
+      "Meeting under ordinary circumstances",
+      "Growing connection",
+      "Hints of hidden lifestyle",
+      "Truth revealed accidentally or intentionally",
+      "Betrayal or uncertainty",
+      "Reconciliation and trust"
+    ],
+    "lexical_markers": [
+      "There's something I haven't told you.",
+      "I didn't want you to like me because of the money.",
+      "I wanted one person who saw *me*.",
+      "I'm still the same person you met.",
+      "Let me prove I'm worth trusting."
+    ]
+  }
+]
