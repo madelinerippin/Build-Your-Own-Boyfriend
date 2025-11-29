@@ -5,6 +5,12 @@ import json
 import random
 import openai
 from openai import OpenAI
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+api_key_plugin = os.getenv("API_KEY")
 
 #dictionary to get main character and love interest's pronouns after user input
 PRONOUNS = {
@@ -17,13 +23,13 @@ PRONOUNS = {
 #this can be fixed because there can be a lot more combos than what this is allowing
 compatible_tropes = {
     "Enemies to Lovers": ["Grumpy and Sunshine", "Fake Relationship", "Forbidden Love"],
-    "Friends to Lovers": ["Second Chance Romance", "Best Friend’s Brother"],
+    "Friends to Lovers": ["Second Chance Romance", "Best Friend's Brother"],
     "Forbidden Love": ["Love Triangle", "Secret Billionaire", "Enemies to Lovers"],
     "Fake Relationship": ["Grumpy and Sunshine", "Enemies to Lovers", "Secret Billionaire"],
     "Grumpy and Sunshine": ["Fake Relationship", "Enemies to Lovers", "Age Gap"],
     "Love Triangle": ["Forbidden Love", "Secret Billionaire"],
-    "Best Friend’s Brother": ["Friends to Lovers", "Second Chance Romance"],
-    "Second Chance Romance": ["Friends to Lovers", "Best Friend’s Brother"],
+    "Best Friend's Brother": ["Friends to Lovers", "Second Chance Romance"],
+    "Second Chance Romance": ["Friends to Lovers", "Best Friend's Brother"],
     "Age Gap": ["Grumpy and Sunshine", "Secret Billionaire"],
     "Secret Billionaire": ["Forbidden Love", "Fake Relationship", "Age Gap", "Love Triangle"]
 }
@@ -44,7 +50,7 @@ with open("example_quotes_per_trope.json", "r", encoding="utf-8") as f:
 
 
 #need to figure out a way to set up a .env so this isn't hard coded
-client = OpenAI(api_key="")
+client = OpenAI(api_key=api_key_plugin)
 
 #all of the user input sections!! There are default options right now if the user doesn't fill something out
 #but should change that to make required sections say "please enter a valid name", etc
