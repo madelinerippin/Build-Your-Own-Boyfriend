@@ -9,66 +9,190 @@
         <br>
         <div class="center_stuff">
             <img src="https://em-content.zobj.net/source/apple/325/face-with-hand-over-mouth_1f92d.png" width="70" height="70">
-            <div class="title comic-relief-bold" style="margin-left: 10; margin-right: 10;">Boyfriend Builder</div>
+            <div class="title comic-relief-bold" style="margin-left: 10; margin-right: 10;">Partner Builder</div>
             <img src="https://em-content.zobj.net/source/apple/325/face-with-hand-over-mouth_1f92d.png" width="70" height="70">
         </div>
         <br><br>
-        <div id="trope_container" class="center_stuff">
-            <div id="trope_box" class="center_stuff pink_box" style="flex-direction: column; overflow: hidden;">
-                <div style="margin-bottom: 30px;" class="trope_box_title comic-relief-bold">Choose your Character Trope 😳🩷💜</div>
-                <div id="select_trope_box" class="center_stuff" style="flex-direction: row; gap: 1vw;">
-                    <div id="trope_1" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_1')">
-                        <div>👨‍💼</div>
-                        <div>CEO</div>
+        <div class="two-box-container comic-relief-bold">
+            <!--Information box-->
+            <div class="equal-box">
+                <div id ="user_container" class="comic-relief-bold" style="font-size: 20px;">
+                    <div class="trope_box_title title comic-relief-bold" style="font-size: 30px;">Who Are You?</div>
+                    <div>Enter your Name:
+                        <input type="text" id="name_input" class="input_box comic-relief-bold" placeholder="Your Name">
                     </div>
-                    <div id="trope_2" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_2')">
-                        <div>🔫</div>
-                        <div>Mafia</div>
+                    <div class="gender-options"> Gender:
+                        <label class="gender-choice">
+                            <input type="radio" name="male" value="Male" onchange="selectUserGender(this.value)">
+                            Male
+                        </label>
+
+                        <label class="gender-choice">
+                            <input type="radio" name="female" value="Female" onchange="selectUserGender(this.value)">
+                            Female
+                        </label>
+
+                        <label class="gender-choice">
+                            <input type="radio" name="nonbinary" value="Nonbinary" onchange="selectUserGender(this.value)">
+                            Non Binary
+                        </label>
                     </div>
-                    <div id="trope_3" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_3')">
-                        <div>🏈</div>
-                        <div>Jock</div>
+                </div>
+                <div id ="partner_container" class="comic-relief-bold" style="font-size: 20px;">
+                    <div class="trope_box_title title comic-relief-bold" style="font-size: 30px;">
+                        Pick Your Partner</div>
+                    <div>Enter their Name:
+                        <input type="text" id="partner_name_input" class="input_box comic-relief-bold" placeholder="Partner Name">
                     </div>
-                    <div id="trope_4" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_4')">
-                        <div>🤴</div>
-                        <div>Prince</div>
+                    <div class="gender-options"> Gender:
+                        <label class="gender-choice">
+                            <input type="radio" name="male1" value="Male" onchange="selectPartnerGender(this.value)">
+                            Male
+                        </label>
+
+                        <label class="gender-choice">
+                            <input type="radio" name="female1" value="Female" onchange="selectPartnerGender(this.value)">
+                            Female
+                        </label>
+
+                        <label class="gender-choice">
+                            <input type="radio" name="nonbinary1" value="Nonbinary" onchange="selectPartnerGender(this.value)">
+                            Non Binary
+                        </label>
                     </div>
-                    <div id="trope_5" class="center_stuff trope_item gamja-flower-regular" style="flex-direction: column;" onclick="selectItem('trope_5')">
-                        <div>😶‍🌫️</div>
-                        <div>Mysterious</div>
+                </div>
+            </div>
+
+            <!-- Design box-->
+            <div class="equal-box">
+                <div class="partner_design_container">
+                    <div class="trope_box_title title comic-relief-bold" style="font-size: 30px;">
+                        Design Your Partner</div>
+                    <div class="design_options_container">
+                        <div class="design_option comic-relief-bold">Height: 
+                            <select class="drop_down_style comic-relief-bold" id="height_select">
+                                <option value="tall">Tall</option>
+                                <option value="medium">Medium</option>
+                                <option value="short">Short</option>
+                            </select>
+                        </div>
+                        <div class="design_option comic-relief-bold">Hair Color: 
+                            <input type="text" id="hair_color_input" class="input_box comic-relief-bold" placeholder="e.g. Dark Brown, Blonde">
+                        </div>
+                        <div class="design_option comic-relief-bold">Eye Color: 
+                            <input type="text" id="eye_color_input" class="input_box comic-relief-bold" placeholder="e.g. Brown, Green">
+                        </div>
+                        <div class="design_option comic-relief-bold">Aesthetic:  
+                            <input type="text" id="aesthetic_input" class="input_box comic-relief-bold" placeholder="e.g. Cool, Down to Earth">
+                        </div>
+                        <div class="design_option comic-relief-bold">Interests/Hobbies: 
+                            <input type="text" id="interests_input" class="input_box comic-relief-bold" placeholder="e.g. Parties, Music">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br><br>
-        <div class="center_stuff title comic-relief-bold" style="font-size: 42px;">
-            <div>Choose your Date Setting:</div>
+        <br>
+
+        <div class="two-box-container comic-relief-bold">
+            <!-- Story Tones boxes -->
+            <div class="equal-box story-tones-box">
+                <div class="story_tone_container">
+                    <div class="trope_box_title title comic-relief-bold" style="font-size: 30;">
+                        Select Story Tones</div>
+                    <div class="story_tone_options_container">
+                        <div class="story_tone_option comic-relief-bold">
+                            <label for="tone1">Spiciness </label>
+                            <input type="range" id="tone1" name="Spiciness" value="5" min="0" max="10">
+                        </div>
+                        <div class="story_tone_option comic-relief-bold">
+                            <label for="tone2">Humor </label>
+                            <input type="range" id="tone2" name="Humor" value="5" min="0" max="10">
+                        </div>
+                        <div class="story_tone_option comic-relief-bold">
+                            <label for="tone3">Angst </label>
+                            <input type="range" id="tone3" name="Angst" value="5" min="0" max="10">
+                        </div>
+                        <div class="story_tone_option comic-relief-bold">
+                            <label for="tone4">Warmth </label>
+                            <input type="range" id="tone4" name="Warmth" value="5" min="0" max="10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <br>
+            <div class="equal-box story-tropes-box">
+                <div class="trope_box_title title comic-relief-bold" style="font-size: 30;">
+                    Select Story Trope
+                </div>
+                <div class="trope_container">
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Enemies to Lovers')">
+                        ⚔️❤️‍🔥 <br>Enemies to Lovers
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Friends to Lovers')">
+                        🤝💗 <br>Friends to Lovers
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Forbidden Love')">
+                        🚫❤️‍🔥 <br>Forbidden Love
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Fake Relationship')">
+                        💍📸 <br>Fake Relationship
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Opposites Attract')">
+                        🌞🌧️ <br>Grumpy and Sunshine
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Love Triangle')">
+                        🔺❤️ <br>Love Triangle
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Best Friend\'s Brother')">
+                        🙈👱‍♂️ <br>Best Friend's Brother
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Second Chance Romance')">
+                        💔⏳<br>Second Chance Romance
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Age Gap')">
+                        ⏳💞 <br>Age Gap
+                    </div>
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Secret Billionaire')">
+                        🤫🤑 <br>Secret Billionaire
+                    </div>
+                </div>
+            </div>
         </div>
         <br>
-        <div id="drop_down_container" class="center_stuff">
-            <select class="drop_down_style comic-relief-bold">
-                <option value="volvo">Restaurant Date 🍝🐟</option>
-                <option value="saab">Movie Date 🍿</option>
-                <option value="mercedes">Amusement Park Date 🎢😱</option>
-            </select>
-        </div>
-        <br><br><br><br><br>
+        <!-- Story Summary Box -->
         <div id="summary_title_container" class="center_stuff title comic-relief-bold" style="font-size: 42px;">
             <div id="summary_container">
-                🤓 Summary: 📖
+                🤓 Stories: 📖
             </div>
         </div>
         <br>
         <div id="summary_container" class="center_stuff comic-relief-bold">
             <div id="summary_box" class=" center_stuff summary_box">
-                <div class="summary_text">
-                    Summary content
-                </div>
+                
             </div>
         </div>
         <br><br>
         <div class="center_stuff">
-            <button class="pink_button">Generate</button>
+            <button type="button" id="generate_button" class="pink_button" onclick="generateStory()">
+                Generate
+            </button>
+        </div>
+        
+        <!--Popups that are currently hidden-->>
+        <div class="loading_popup" id="loading_popup">
+            <div class="loading_popup_text">
+                Generating your story... 📖✨
+            </div>
+        </div>
+
+        <div class="story_popup" id="story_popup">
+            <button type="button" class="close_button" onclick="closeStoryPopup()">
+                X
+            </button>
+            <p class="story_popup_text" id="story_popup_text">
+                Story content
+            </p>
         </div>
         <script src="trope_methods.js"></script>
     </body>
