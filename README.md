@@ -8,8 +8,12 @@ The ultimate goal of our system is to create a story based on user-selected roma
 
 ## How to Setup and Run Demo:
 Step 1: Clone the repository ```github clone https://github.com/madelinerippin/Build-Your-Own-Boyfriend.git```
+
 Step 2: Create a `.env` file with a var called OPENAI_API_KEY set to your OpenAI API key
+
 Step 3: Install dependencies ```pip install -r requirements.txt```
+
 Step 4: Run the file ```python -m uvicorn new_partner_builder:app --reload```
+
 Step 5: Insert all user input and then click the "Generate" button to see your created story!
 
