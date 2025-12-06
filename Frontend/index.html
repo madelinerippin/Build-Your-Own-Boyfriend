@@ -128,33 +128,43 @@
                 <div class="trope_container">
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Enemies to Lovers')">
                         ⚔️❤️‍🔥 <br>Enemies to Lovers
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Enemies to Lovers')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Friends to Lovers')">
                         🤝💗 <br>Friends to Lovers
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Friends to Lovers')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Forbidden Love')">
                         🚫❤️‍🔥 <br>Forbidden Love
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Forbidden Love')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Fake Relationship')">
                         💍📸 <br>Fake Relationship
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Fake Relationship')">Set Story Beats</button>
                     </div>
-                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Opposites Attract')">
+                    <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Grumpy and Sunshine')">
                         🌞🌧️ <br>Grumpy and Sunshine
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Grumpy and Sunshine')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Love Triangle')">
                         🔺❤️ <br>Love Triangle
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Love Triangle')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Best Friend\'s Brother')">
                         🙈👱‍♂️ <br>Best Friend's Brother
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Best Friend\'s Brother')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Second Chance Romance')">
                         💔⏳<br>Second Chance Romance
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Second Chance Romance')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Age Gap')">
                         ⏳💞 <br>Age Gap
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Age Gap')">Set Story Beats</button>
                     </div>
                     <div class="trope_item gamja-flower-regular" onclick="toggleTrope(this, 'Secret Billionaire')">
                         🤫🤑 <br>Secret Billionaire
+                        <button class="set_story_beats gamja-flower-regular" onclick="openBeatsPopup('Secret Billionaire')">Set Story Beats</button>
                     </div>
                 </div>
             </div>
@@ -185,14 +195,40 @@
                 Generating your story... 📖✨
             </div>
         </div>
-
-        <div class="story_popup" id="story_popup">
-            <button type="button" class="close_button" onclick="closeStoryPopup()">
-                X
-            </button>
-            <p class="story_popup_text" id="story_popup_text">
-                Story content
-            </p>
+        <div id="story_popup_dark_screen" class="story_popup_dark_screen center_stuff">
+            <div class="story_popup" id="story_popup">
+                <button type="button" class="close_button" onclick="closeStoryPopup()">
+                    X
+                </button>
+                <p class="story_popup_text" id="story_popup_text">
+                    Story content
+                </p>
+            </div>
+        </div>
+        <div id="story_beats_popup" class="story_beats_popup center_stuff">
+            <div id="story_beats_view" class="story_beats_view center_stuff" style="flex-direction: column">
+                <button type="button" class="close_button exit_icon" onclick="closeBeatsPopup()">
+                    X
+                </button>
+                <div class="story_beats_title title comic-relief-bold">
+                    Enter your Story Beats!
+                </div>
+                <br>
+                <div id="trope_beats_title" class="story_beats_title title gamja-flower-regular center_stuff" style="color: rgb(255, 134, 134)">
+                    <div id="title_beat_box"></div>
+                    <button type="button" class="close_button add_icon" id="add_beat_icon">
+                        +
+                    </button>
+                </div>
+                <hr><br>
+                <div id="story_beats_container" class="story_beats_container_style">
+                    <form id="beatsForm" class="form_style">
+                    </form>
+                    <div class="center_stuff">
+                        <button class="pink_button" onclick="saveBeats()">Save</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="trope_methods.js"></script>
     </body>
