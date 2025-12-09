@@ -53,6 +53,10 @@
     font-size: 24px;
 }
 
+.pink_button:hover{
+    cursor: pointer;
+}
+
 .trope_item {
     font-size: 20px;
     color: rgb(255, 108, 132);
@@ -195,7 +199,8 @@
     overflow: auto;
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    visibility: hidden;
+    /* visibility: hidden; */
+    border-radius: 15px;
 
 }
 
@@ -237,6 +242,10 @@
     color: white;
 }
 
+.story_div:hover {
+    cursor: pointer;
+}
+
 button:disabled,
 button[disabled]{
     cursor: not-allowed;
@@ -262,4 +271,143 @@ button[disabled]{
 
 .show_loading_popup {
     visibility: visible;
+}
+
+.story_popup_dark_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 100;
+    align-items: center;
+    visibility: hidden;
+}
+
+.story_beats_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 100;
+    align-items: center;
+    visibility: hidden;
+}
+
+.story_beats_view {
+    position: relative;
+    width: 50%;
+    height: auto;
+    background-color: rgb(255, 226, 231);
+    border: 1px solid rgb(255, 67, 123);
+    border-radius: 15px;
+    z-index: 101;
+    margin: 5px;
+}
+
+.exit_icon {
+    position: absolute;
+    cursor: pointer;
+}
+
+.add_icon {
+    position: relative;
+    top: -10%;
+    right: -5%;
+    cursor: pointer;
+}
+
+.story_beats_title {
+    font-size: 32px;
+    color: rgb(131, 50, 63);
+    font-weight: bold;
+}
+
+.selected_trope_item {
+    font-size: 20px;
+    color: rgb(255, 108, 132);
+    font-weight: bold;
+    width: 150px;
+    background-color: rgba(255, 36, 36, 0.1);
+    text-align: center;
+}
+
+.set_story_beats {
+    background-color: rgb(252, 83, 111);
+    border-radius: 25px;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    border: 0px;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    z-index: 999;
+}
+
+.story_beats_view hr {
+    width: 60%;
+    border: none;
+    background-color: rgb(252, 83, 111);
+    height: 4px;
+    border-radius: 5px;
+}
+
+.beat_item {
+    font-size: 20px;
+    color: rgb(255, 108, 132);
+    font-weight: bold;
+    /* width: 150px; */
+    background-color: rgba(255, 36, 36, 0.1);
+    border: 3px solid rgb(255, 191, 131);
+    text-align: center;
+    height: fit-content;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text_area {
+    width: 60%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    resize: none;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.remove_beat {
+    background-color: rgb(255, 67, 123);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.story_beats_container_style {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.form_style {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }

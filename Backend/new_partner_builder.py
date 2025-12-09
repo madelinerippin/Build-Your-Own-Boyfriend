@@ -203,6 +203,7 @@ def generate_multi_trope_story(
     mc_p,
     li_p,
     dream_bible,
+    custom_beats,
     spiciness=5,
     humor=5,
     angst=5,
@@ -215,10 +216,27 @@ def generate_multi_trope_story(
 
     sections = []
 
-    for trope in selected_tropes:
+    # for trope in selected_tropes:
+    #     prompt = build_section_prompt(
+    #         sections,
+    #         trope,
+    #         protagonist_name,
+    #         love_interest_name,
+    #         mc_p,
+    #         li_p,
+    #         dream_bible,
+    #         spiciness,
+    #         humor,
+    #         angst,
+    #         warmth,
+    #         snippets_per_trope,
+    #         custom_beats.trope
+    #     )
+
+    for i in range(len(selected_tropes)):
         prompt = build_section_prompt(
             sections,
-            trope,
+            selected_tropes[i],
             protagonist_name,
             love_interest_name,
             mc_p,
@@ -228,7 +246,8 @@ def generate_multi_trope_story(
             humor,
             angst,
             warmth,
-            snippets_per_trope
+            snippets_per_trope,
+            custom_beats[i]["beats"]
         )
 
         response = client.chat.completions.create(
@@ -349,6 +368,7 @@ class StoryRequest(BaseModel):
     humor: int
     angst: int
     warmth: int
+    custom_beats: List[Dict[str, List[str]]]
 
 
 @app.post("/generate_story")
@@ -373,6 +393,7 @@ def generate_story(request: StoryRequest):
             mc_pronouns,
             li_pronouns,
             request.dream_bible,
+            request.custom_beats,
             request.spiciness,
             request.humor,
             request.angst,
