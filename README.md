@@ -15,7 +15,6 @@ Step 3: Install dependencies ```pip install -r requirements.txt```
 
 Step 4: Run the file ```python -m uvicorn new_partner_builder:app --reload``` (make sure you are in the Backend directory)
 
-Step 5: Make a new terminal and run '''open [file-path]/index.html''' for Mac/Linux and '''start [file-path]/index.html'''
+Step 5: Make a new terminal and run ```open [file-path]/index.html``` for Mac/Linux and ```start [file-path]/index.html```
 
 Step 6: Insert all user input and then click the "Generate" button to see your created story!
-
