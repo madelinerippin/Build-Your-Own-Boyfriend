@@ -350,10 +350,10 @@ class StoryRequest(BaseModel):
     angst: int
     warmth: int
 
-warning = []
 
 @app.post("/generate_story")
 def generate_story(request: StoryRequest):
+    warning = []
     selected_tropes = request.selected_tropes
     final_story = ""
 

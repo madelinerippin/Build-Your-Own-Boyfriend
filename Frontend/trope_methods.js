@@ -53,6 +53,7 @@ async function generateStory() {
         alert("Please select at least 3 tropes for your boyfriend!");
         return;
     }
+    
     generate_button.disabled = true;
     loading_popup.classList.add("show_loading_popup");
 
@@ -113,7 +114,8 @@ async function generateStory() {
 
         if (data.warnings && data.warnings.length > 0) {
             alert("Warning:\n" + data.warnings.join("\n") + "Try a new combination!" );
-            //return;
+            generate_button.disabled = false;
+            return;
         }
         //alert("Testing story:\n" + data.story);
         // // 6. Handle compatibility or backend errors
